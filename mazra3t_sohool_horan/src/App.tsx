@@ -4,10 +4,12 @@ import './App.css';
 import styled from 'styled-components';
 //import { AppBar } from '@mui/material';
 import  AppBar from './components/AppBar';
+import WovenImageList from './components/WovenImageList';
 function App() {
   return (
     <>
     <AppBar/>
+    <WovenImageList/>
     </>
   );
 }
