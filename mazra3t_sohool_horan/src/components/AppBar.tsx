@@ -12,16 +12,13 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { useState,useRef } from 'react';
 import {BrowserRouter,Link,Route,Routes}from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import Home from '../pageCom/Home';
 import Gallery from '../pageCom/Gallery';
 import Pricing from '../pageCom/Pricing';
 import Booking from '../pageCom/Booking';
-
-
-const pages = [<Home/>,<Gallery/>,<Pricing/>,<Booking/>];
+const pages = ['Home','Gallery','Pricing','Booking'];
 const settings = ['Profile', 'Account', '', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -97,11 +94,10 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                // <MenuItem key={page} onClick={handleCloseNavMenu}>
-                //   <Typography textAlign="center">{page}</Typography>
-                // </MenuItem>
-                <h1>hi</h1>
-                ))}
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page}</Typography>
+                </MenuItem>
+              ))}
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -126,9 +122,9 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                // key={page}
-                // onClick={handleCloseNavMenu}
-                // sx={{ my: 2, color: 'white', display: 'block' }}
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
               </Button>
