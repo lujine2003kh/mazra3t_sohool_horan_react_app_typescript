@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{useState,useRef} from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -20,7 +20,12 @@ import Pricing from '../pageCom/Pricing';
 import Booking from '../pageCom/Booking';
 const pages = ['Home','Gallery','Pricing','Booking'];
 const settings = ['Profile', 'Account', '', 'Logout'];
-
+// const routes = [
+//   { path: '/', element: <Home />, label: 'Home' },
+//   { path: '/gallery', element: <Gallery />, label: 'Gallery' },
+//   { path: '/pricing', element: <Pricing />, label: 'Pricing' },
+//   { path: '/booking', element: <Booking />, label: 'Booking' },
+// ];
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
@@ -41,7 +46,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-  <BrowserRouter>
+  //<BrowserRouter>
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -94,8 +99,9 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem >
+                {/* key={page} onClick={handleCloseNavMenu} */}
+                <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -120,13 +126,13 @@ function ResponsiveAppBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {pages.map((pages) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                // key={pages}
+                // onClick={handleCloseNavMenu}
+                // sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                {pages}
               </Button>
             ))}
           </Box>
@@ -163,7 +169,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
-  </BrowserRouter>
+ // </BrowserRouter>
   );
 }
 export default ResponsiveAppBar;
