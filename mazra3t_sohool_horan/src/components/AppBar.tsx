@@ -1,38 +1,31 @@
-import React,{useState,useRef} from 'react';
+import AdbIcon from '@mui/icons-material/Adb';
 import AppBar from '@mui/material/AppBar';
+import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import {BrowserRouter,Link,Route,Routes}from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
-import Home from '../pageCom/Home';
-import Gallery from '../pageCom/Gallery';
-import Pricing from '../pageCom/Pricing';
-import Booking from '../pageCom/Booking';
-const pages = ['Home','Gallery','Pricing','Booking'];
-const settings = ['Profile', 'Account', '', 'Logout'];
-// const routes = [
-//   { path: '/', element: <Home />, label: 'Home' },
-//   { path: '/gallery', element: <Gallery />, label: 'Gallery' },
-//   { path: '/pricing', element: <Pricing />, label: 'Pricing' },
-//   { path: '/booking', element: <Booking />, label: 'Booking' },
-// ];
-function ResponsiveAppBar() {
+// AppBar.tsx (adjusted if needed)
+import React from 'react';
+import Toolbar from '@mui/material/Toolbar';
+import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
+
+const pages = ['Home', 'Gallery', 'Pricing', 'Booking'];
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+const ResponsiveAppBar: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElUser(event.currentTarget);
   };
@@ -46,7 +39,6 @@ function ResponsiveAppBar() {
   };
 
   return (
-  //<BrowserRouter>
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -55,7 +47,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -99,9 +91,10 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem >
-                {/* key={page} onClick={handleCloseNavMenu} */}
-                <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                    <Link to={`/${page}`}>{page}</Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -111,7 +104,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -126,13 +119,15 @@ function ResponsiveAppBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((pages) => (
+            {pages.map((page) => (
               <Button
-                // key={pages}
-                // onClick={handleCloseNavMenu}
-                // sx={{ my: 2, color: 'white', display: 'block' }}
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {pages}
+                <Link to={`/${page}`} style={{ color: 'white', textDecoration: 'none' }}>
+                  {page}
+                </Link>
               </Button>
             ))}
           </Box>
@@ -169,7 +164,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
- // </BrowserRouter>
   );
-}
+};
+
 export default ResponsiveAppBar;
