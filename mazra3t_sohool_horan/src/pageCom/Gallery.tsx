@@ -2,7 +2,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 // Gallery.tsx
 import React from 'react';
-
+import Footer from '../components/footer';
 const itemData = [
   {
     img: 'https://images.unsplash.com/photo-1549388604-817d15aa0110',

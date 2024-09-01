@@ -14,7 +14,10 @@ import React from 'react';
 import Toolbar from '@mui/material/Toolbar';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
-
+import "../App";
+import "../style/appBar.css"
+import logo from "../media/logo4.png";
+import profile from "../media/profile_3-removebg-preview.png";
 const pages = ['Home', 'Gallery', 'Pricing', 'Booking'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -39,40 +42,12 @@ const ResponsiveAppBar: React.FC = () => {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
+    <AppBar   position="static">
+      <Container   maxWidth="xl">
+        <Toolbar  disableGutters>
+          <img src={logo} className='logo'/>
+          <Box  sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <Menu 
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -89,9 +64,9 @@ const ResponsiveAppBar: React.FC = () => {
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
-            >
+            > 
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem  key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
                     <Link to={`/${page}`}>{page}</Link>
                   </Typography>
@@ -99,7 +74,7 @@ const ResponsiveAppBar: React.FC = () => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <AdbIcon  sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -118,7 +93,7 @@ const ResponsiveAppBar: React.FC = () => {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box  sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -135,7 +110,8 @@ const ResponsiveAppBar: React.FC = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                {/* <Avatar alt="Remy Sharp" src="profile" /> */}
+                <img src={profile} className='profile'/>
               </IconButton>
             </Tooltip>
             <Menu
