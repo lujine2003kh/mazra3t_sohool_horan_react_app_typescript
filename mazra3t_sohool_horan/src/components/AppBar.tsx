@@ -17,9 +17,9 @@ import Typography from '@mui/material/Typography';
 import "../App";
 import "../style/appBar.css"
 import logo from "../media/logo4.png";
-import profile from "../media/profile_3-removebg-preview.png";
+import profile from "../media/white_profile-removebg-preview.png";
 const pages = ['Home', 'Gallery', 'Pricing', 'Booking'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Profile', 'Log In', 'Sign Up'];
 
 const ResponsiveAppBar: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -91,7 +91,7 @@ const ResponsiveAppBar: React.FC = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            sohool horan
           </Typography>
           <Box  sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -132,7 +132,11 @@ const ResponsiveAppBar: React.FC = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  {/* <Typography textAlign="center">{setting}</Typography> */}
+                  {/* <Link to={`/${setting}`}>{setting}</Link> */}
+                  <Typography textAlign="center">
+                    <Link to={`/${setting}`}>{setting}</Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>

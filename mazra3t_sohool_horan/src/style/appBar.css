@@ -1,4 +1,17 @@
 a{
     font-size: 18px;
-    margin-left: 80%;
+    margin-left: 0px;
+    padding: 30px;
+    color:#4f8c73;
+    text-decoration: none;
 }
+/* a:hover{
+    background-color:#4f8c73;
+}
+
+@media (hover:none){
+    .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover{
+      background-color: #56967A;
+    }
+  }
+   */

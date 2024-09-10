@@ -1,0 +1,46 @@
+.p{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.money{
+    width: 200px;
+    height: 500px;
+    position: relative;
+    margin-left:85%;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+    
+
+
+.div3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    
+}
+
+.div4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.div5 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.price{
+    color: #56967A;
+    font-weight: bolder;
+}
