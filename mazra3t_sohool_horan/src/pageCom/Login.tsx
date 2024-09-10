@@ -21,7 +21,7 @@ const Login: React.FC<LoginProps> = () => {
           <button type="submit">Sign In</button>
         </form>
         Need an account? Sign up
-        <Link className='here' to='/SignUp'>here</Link>
+        <Link className='here' to='/Sign Up'>here</Link>
       </div>
     </div>
   );
