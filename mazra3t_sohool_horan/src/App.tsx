@@ -3,10 +3,10 @@ import { BrowserRouter, Link, Route, Routes, } from 'react-router-dom';
 import AppBar from './components/AppBar';
 import Footer from './components/Footerblackbox';
 import Booking from './pageCom/Booking';
-import Gallery from './pageCom/Gallery';
 import { Navbar } from './components/navbar';
 // Pages
 import Home from './pageCom/Home';
+import Gallery from './pageCom/Gallery';
 import { Signup } from './pageCom/SignUp';
 import Pricing from './pageCom/Pricing';
 // App.tsx
@@ -27,7 +27,7 @@ const App: React.FC = () => {
     <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/Home" element={<Home/>} />
-    <Route path="/Gallery" element={<Gallery />} />
+    <Route path="/Gallery" element={<Gallery/>} />
     <Route path="/Pricing" element={<Pricing />} />
     <Route path="/Booking" element={<Booking />} />
     <Route path='/Log In' element={<Login />}/> 

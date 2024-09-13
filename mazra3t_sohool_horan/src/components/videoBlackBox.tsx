@@ -2,7 +2,7 @@ import React from 'react';
 import videoSrc from "../media/sohoolVid.mp4";
 import '../style/videoBlackBox.css';
 interface VideoProps {
-    autoplay?: boolean;
+    autoplay?: true;
     loop?: boolean;
     controls?: boolean;
     src?: string;
@@ -15,11 +15,19 @@ interface VideoProps {
     controls = true,
   }) => {
     return (
-      <video
-        src={src}
+        <>
+         <video
+         className='vid'
+      src={src}
         autoPlay={autoplay}
         loop={loop}
         controls={controls}
+
       />
+     
+     </>
+     
+      
     );
   };
+export default VideoPlay;

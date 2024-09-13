@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from "react";
 import '../style/signup.css';
-
+import logo from '../media/logo4.png';
+import { Link } from 'react-router-dom';
 
 const strengthLabels = ["weak", "medium", "strong"];
 
@@ -42,8 +43,8 @@ export const Signup = () => {
 
   return (
     <div className="login-card">
-      {/* <img src={logo} /> */}
-      <h2>Sign Up</h2>
+      {/* <img className="img" src={logo} />  */}
+      <h2 className="sign">Sign Up</h2>
       <form className="login-form">
         <div className="username">
           <input
@@ -74,9 +75,9 @@ export const Signup = () => {
           <div></div>
         </div>
         <div className="strength">{strength && <>{strength} password</>}</div>
-        <button className="control" type="button">
+        <Link to='/Home'><button className="control" type="submit">
           JOIN NOW
-        </button>
+        </button></Link>
       </form>
     </div>
   );

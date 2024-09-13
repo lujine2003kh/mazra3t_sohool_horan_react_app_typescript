@@ -18,10 +18,10 @@
   }
   
   .login-card {
-    width: 400px;
+    width: 95.8%;
     padding: 60px 30px 32px;
-    border-radius: 1.25rem;
-    background: #ffffff;
+    /* border-radius: 1.25rem; */
+    background: #eff9ff;
     text-align: center;
     transition: 0.4s;
   }
@@ -29,16 +29,17 @@
   .login-card > h2 {
     font-size: 36px;
     font-weight: 600;
-    margin: 0 0 30px;
+    /* margin: 0 0 30px; */
+    margin-right: 4%;
   }
   
-  .login-card img {
-    width: 260px;
+  /* .login-card img {
+    width: 50px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 5px;
     margin-bottom: 10px;
-  }
+  } */
   
   .login-form {
     width: 100%;
@@ -48,12 +49,13 @@
   
   .login-form input.control::placeholder {
     color: #075835;
+    
   }
   
   .control {
     border: 1.5px solid #56967A;
     outline: none;
-    width: 100%;
+    width: 500px;
     height: 56px;
     padding: 0 16px;
     background: #f6f7ff;
@@ -64,13 +66,17 @@
     text-align: left;
     font-size: 18px;
     transition: 0.4s;
+    margin-left: 30%;
   }
-  
+  .username{
+    width: 21px;
+    margin-left: 30%;
+  }
   button.control {
     cursor: pointer;
-    width: 100%;
+    width: 200px;
     height: 56px;
-    padding: 0 16px;
+    padding: 0 20px;
     background:#56967A;
     color: #f7f7f7;
     border: 0;
@@ -80,6 +86,7 @@
     text-align: center;
     letter-spacing: 2px;
     transition: all 0.375s;
+    margin-left: 0%;
   }
   
   .bars {
@@ -91,6 +98,8 @@
     height: 6px;
     border-radius: 3px;
     background: #075835;
+    width: 550px;
+    margin-left: 30%;
   }
   
   .bars div {
@@ -117,6 +126,7 @@
   
   .strength {
     text-align: left;
+    margin-left: 30%;
     height: 30px;
     text-transform: capitalize;
     color: #56967A;

@@ -1,40 +1,49 @@
-.carousel,.slide{
-    position:relative;
-    width: 1000px;
-    height: 600px;
-    margin-top: 10%;
-    margin-left: 15%;
+
+.gall{
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-width: 10px;
+    border-style:outset;
+    border-color: #419470;
+}
+.gallery{
+    margin: 2%;
+}
+.check{
+    margin-left: 35%;
+    font-size: 40px;
+}
+.look{
+    font-size: 40px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(1,1fr);
+    gap: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
     
-    }
-    
-    #carouselExampleIndicators{
-        background-color: red;
-        margin-top: 50px;
-    }
-    #carouselExampleIndicators>button{
-        background-color: #8eada9;
-        width: 50px;
-        height: 100px;
-        margin-top: 25%;
-    }
-    #carouselExampleIndicators>.carousel-indicators>button{
-        background-color: #8eada9;
-        
-    }
-    .imgcl{
-        width:100px;
-        height:600px;
-    }
-    img.d-block.w-100.imgcl {
-        border: #56967a;
-        border-width: thick;
-        border-style: solid;
-    }
-    #demotext {
-        text-shadow: 2px 2px 7px rgba(65,148,112,0.62);
-        color: #56967A;
-        background: #FFFFFF;
-        margin-top: 50px;
-        margin-left: 300px;
-        font-size: 60px;
-    }
+
+.div2 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.div1{
+    grid-row: 1;
+    grid-column: 1;
+}
+.div3 {
+    grid-row:1;
+    grid-column-start: 1;
+   
+}
+.grid{
+    margin-bottom: 0;
+}

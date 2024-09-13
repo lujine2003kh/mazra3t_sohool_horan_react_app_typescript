@@ -23,7 +23,14 @@
 }
     
 
-
+.div1 {
+    grid-row: 1;
+    grid-column: auto;
+}
+.div2 {
+    grid-row: 1;
+    grid-column: auto;
+}
 .div3 {
     grid-column-start: 1;
     grid-row-start: 2;

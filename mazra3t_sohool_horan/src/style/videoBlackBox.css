@@ -16,8 +16,8 @@
     display: block;
     
     /* Set the width and height of the video element */
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     
     /* Remove any borders or outlines */
     border: none;
@@ -32,4 +32,45 @@
     
     /* Add a background color to the video element */
     background-color: yellow;
+  }
+  @media (max-width:640px) {
+    /* styles here will be applied when the screen width is 575px or less */
+    .vid{
+        /* width:500px; */
+        width: 50%;
+         margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 70px; 
+        border-width: 10px;
+        border-color:#56967A ;
+        border-style:inset;
+      }
+
+  }
+  @media (max-width:1536px) {
+    /* styles here will be applied when the screen width is 575px or less */
+    .vid{
+        width:70%;
+        height: 70%;
+         margin-left: 15%;
+        /* margin-right: 4%; */
+        margin-bottom: 70px; 
+        border-width: 10px;
+        border-color:#56967A ;
+        border-style:inset;
+      }
+
+  }
+  @media (max-width:1280px) {
+    /* styles here will be applied when the screen width is 575px or less */
+    .vid{
+        width:90%;
+         margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 70px; 
+        border-width: 10px;
+        border-color:#56967A ;
+        border-style:inset;
+      }
+
   }
