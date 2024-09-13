@@ -120,7 +120,7 @@ body {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-.form > button {
+.btn{
   border: 0;
   font-size: 20px;
   color: #f9f9f9;
@@ -130,7 +130,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   width:150px;
-  margin-left: 30%;
+  margin-left: 5%;
 }
 .card>h2{
   font-family: "Euclid Circular A", "Poppins";

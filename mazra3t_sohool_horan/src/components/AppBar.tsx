@@ -19,8 +19,8 @@ import "../style/appBar.css"
 import logo from "../media/logo4.png";
 import profile from "../media/white_profile-removebg-preview.png";
 const pages = ['Home', 'Gallery', 'Pricing', 'Booking'];
-const settings = ['Profile', 'Log In', 'Sign Up'];
-
+const settings = [ 'Log In', 'Sign Up'];
+// const settings = ['Profile', 'Log In', 'Sign Up'];
 const ResponsiveAppBar: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
