@@ -1,0 +1,99 @@
+form {
+    max-width: 100%;
+    /* margin: 40px auto; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* button[type="submit"] {
+    background-color:#4f8c73;
+    color: #fff;
+    padding: 20px 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color:#6a9482;
+  } */
+  #cssportal-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #div1 {
+    grid-area: 1 / 1 / 5 / 2;
+    width: 600px;
+    /* background-color: rgba(219,248,205, 0.5); */
+  }
+  #div2 {
+    grid-area: 1 / 2 / 5 / 3;
+    width: 600px;
+    /* background-color: rgba(164,40,95, 0.5); */
+  }
+  #div3 {
+    grid-area: 5 / 1 / 6 / 3;
+    /* background-color: rgba(89,180,76, 0.5); */
+  }
+
+  select {
+    width: 80px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-left: 12%;
+    padding:10px;
+    border: 1px solid #4f8c73;
+  }
+  
+  select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  label[for="birthdate"] {
+    margin-top: 5px;
+  }
+  
+  label[for="timeperiod"] {
+    margin-top: 5px;
+  }
+  input[type="text"] {
+    width: 40%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #4f8c73;
+    margin-left: 5%;
+}
+/* registration-form.css */
+
+  /* You can add more styles as needed */
+  /* You can add more styles as needed */
+.payinfo{
+  font-size: 40px;
+  margin-left: 25%;
+}
