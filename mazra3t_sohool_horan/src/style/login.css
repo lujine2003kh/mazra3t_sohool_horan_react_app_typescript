@@ -10,14 +10,6 @@ body {
   font-family: "Euclid Circular A", "Poppins";
 } 
 
-@media (width >= 500px) {
-  .card {
-      margin: 0;
-      width: 120px;
-      padding: 70px 70px;
-  }
-}
-
 /* .background {
   pos
   box-sizing:content-box;
@@ -66,13 +58,6 @@ body {
   height: 1000px;
   border-radius: 50%;
   background:#419470;
-}
-
-@media (width >= 500px) {
-  .card {
-    margin: 0;
-    width: 360px;
-  }
 }
 
 .card .logo {
@@ -152,7 +137,7 @@ body {
   color: #419470;
 }
 
-body{
+/* body{
   margin:0 auto;
 }
 #navbarScroll{
@@ -162,7 +147,7 @@ body{
 .navbar{
   background-color:#56967a;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
+} */
 .dropdown-menu.show {
   display: block;
   border: groove;
@@ -186,7 +171,7 @@ body{
   cursor: pointer;
   outline: none;
 }
-#login>a{
+/* #login>a{
   color: #000;
   text-decoration: none;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -256,5 +241,12 @@ body{
 }
 .nav-item{
   padding: 20px;
+}
+ */
+ @media (width >= 500px) {
+  .card {
+      margin: 0;
+      width: 350px;
+  }
 }
 

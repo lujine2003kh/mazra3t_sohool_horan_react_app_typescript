@@ -13,6 +13,7 @@ import Pricing from './pageCom/Pricing';
 import React from 'react';
 import { HashRouter as Router } from 'react-router-dom';
 import Login from './pageCom/Login';
+import Purchase from './pageCom/purchase';
 
 const App: React.FC = () => {
   return (
@@ -33,6 +34,7 @@ const App: React.FC = () => {
     <Route path='/Log In' element={<Login />}/> 
     <Route path='/Sign Up' element={<Signup/>}/>
     <Route path='/here' element={<Signup/>}/>
+    <Route path='/purchase' element={<Purchase/>}/>
 
     </Routes>
     <Footer/>

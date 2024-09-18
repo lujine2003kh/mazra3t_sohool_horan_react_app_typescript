@@ -2,14 +2,13 @@
     box-sizing: border-box;
   } */
   
- body {
-    place-items: center;
-    margin: 0;
+ /* body {
+    
     background: #56967A;
     font-family: "Euclid Circular A";
     color: #075835;
     animation: rotate 5s infinite alternate linear;
-  }
+  } */
 
   button {
     background: transparent;
@@ -18,8 +17,8 @@
   }
   
   .login-card {
-    width: 95.8%;
-    padding: 60px 30px 32px;
+    width: 100%;
+    /* padding: 60px 30px 32px; */
     /* border-radius: 1.25rem; */
     background: #eff9ff;
     text-align: center;
@@ -42,9 +41,13 @@
   } */
   
   .login-form {
-    width: 100%;
+    width: 97%;
     margin: 0;
     display: grid;
+    font-size: 20px;
+    color: #419470;
+    font-family: "Euclid Circular A", "Poppins";
+
   }
   
   .login-form input.control::placeholder {
@@ -87,10 +90,15 @@
     letter-spacing: 2px;
     transition: all 0.375s;
     margin-left: 0%;
+    border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
   }
   
   .bars {
-    margin: 8px 0;
+     margin: 8px 0;
     flex: 1 1 auto;
     display: flex;
     align-items: center;

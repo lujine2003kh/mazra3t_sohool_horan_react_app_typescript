@@ -9,8 +9,8 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ type, number, expDate, name }) => {
   return (
-    <div className="card">
-      <div className="card__info">
+    <div className="creditcard">
+      <div className="creditcard__info">
         <div className="card__logo">MasterCard</div>
         <div className="card__chip">
           <svg
@@ -33,7 +33,7 @@ const Card: React.FC<CardProps> = ({ type, number, expDate, name }) => {
               <polyline points="65,65 80,80 100,80" fill="none" stroke="#000" stroke-width="2" />
             </g>
           </svg>
-          <div className="card__chip-texture" />
+          <div className="creditcard__chip-texture" />
         </div>
         <div className="card__type">{type}</div>
         <div className="card__number">

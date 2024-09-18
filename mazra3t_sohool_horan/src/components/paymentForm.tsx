@@ -3,6 +3,8 @@ import '../style/PaymentForm.css';
 import DatePicker from 'react-datepicker';
 import RegistrationForm from './datePicker';
 import Card from './credit';
+import { Link } from 'react-router-dom';
+
 //DATE
 interface Birthdate {
   day: number;
@@ -109,7 +111,7 @@ const [birthdate, setBirthdate] = useState<Birthdate>({ day: 0, month: '', year:
       </label>
       {/* <RegistrationForm/> */}
       <label htmlFor="birthdate">Birthdate:</label>
-      <select className='day' id="day" name="day" value={birthdate.day} onChange={handleBirthdateChange}>
+      <select className='day selector' id="day" name="day" value={birthdate.day} onChange={handleBirthdateChange}>
         <option value="">Day</option>
         {Array.from(Array(31), (_, i) => (
           <option value={i + 1}>{i + 1}</option>
@@ -129,18 +131,20 @@ const [birthdate, setBirthdate] = useState<Birthdate>({ day: 0, month: '', year:
       </select>
 
       <label htmlFor="timeperiod">Time Period:</label>
-      <select id="from" name="from" value={timePeriod.from} onChange={handleTimePeriodChange}>
-        <option value="">From</option>
-        <option value="morning">Morning</option>
-        <option value="afternoon">Afternoon</option>
-        <option value="evening">Evening</option>
+      <select className='selector' id="from" name="from" value={timePeriod.from} onChange={handleTimePeriodChange}>
+        <option value="">Timing</option>
+        <option value="morning">Morning(10AM-8PM)</option>
+        <option value="afternoon">Morning until Midnight(10AM-12AM)</option>
+        <option value="evening">Evening(10PM-8AM)</option>
+        <option value="evening">Evening(10PM-8AM)</option>
+        <option value="evening">Full Day(10AM-8AM)</option>
       </select>
-      <select id="to" name="to" value={timePeriod.to} onChange={handleTimePeriodChange}>
+      {/* <select id="to" name="to" value={timePeriod.to} onChange={handleTimePeriodChange}>
         <option value="">To</option>
         <option value="morning">Morning</option>
         <option value="afternoon">Afternoon</option>
         <option value="evening">Evening</option>
-      </select>
+      </select> */}
       </div>
 	      <div id="div2"><label>
         Card Number:
@@ -184,7 +188,7 @@ const [birthdate, setBirthdate] = useState<Birthdate>({ day: 0, month: '', year:
       </div>
 	      <div id="div3">
         <br />
-        <button type="submit">Pay</button>
+        <Link to='/purchase'><button className='paybutton' type="submit">Pay</button></Link>
         </div>
       </div>
     </form>

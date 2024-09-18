@@ -30,6 +30,7 @@ form {
   
   label[for="birthdate"] {
     margin-top: 10px;
+    /* margin-left: 50%; */
   }
   
   label[for="timeperiod"] {

@@ -44,8 +44,9 @@ export const Signup = () => {
   return (
     <div className="login-card">
       {/* <img className="img" src={logo} />  */}
-      <h2 className="sign">Sign Up</h2>
+      
       <form className="login-form">
+      <h2 className="sign">Sign Up</h2>
         <div className="username">
           <input
             autoComplete="off"

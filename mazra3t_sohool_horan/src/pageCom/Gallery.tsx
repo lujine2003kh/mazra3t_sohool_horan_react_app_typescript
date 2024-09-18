@@ -8,7 +8,7 @@ const Gallery: React.FC = () => {
     <>
     <h1 className='check'>Check Our Gallery Photos</h1>
     <TitlebarBelowMasonryImageList/>
-    <div className="parent grid">
+    <div className="parent1 grid">
       <div className="div1">
       <PoolIcon />
         <h1 className='look'>Look At Our Swimming Pool</h1>

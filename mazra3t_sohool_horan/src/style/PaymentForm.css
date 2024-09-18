@@ -7,13 +7,13 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  label {
+  /* label {
     display: block;
     margin-bottom: 5px;
     margin-top: 10px;
     margin-left: 20px;
   }
-  
+   */
   input[type="text"] {
     width: 300px;
     height: 30px;
@@ -39,9 +39,9 @@ form {
   } */
   #cssportal-grid {
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(6, 1fr);
-    gap: 0;
+    gap: 0px;
     width: 100%;
     height: 100%;
   }
@@ -61,12 +61,12 @@ form {
   }
 
   select {
-    width: 80px;
-    height: 20px;
+    width: 100px;
+    height: 30px;
     margin-bottom: 10px;
-    margin-left: 12%;
-    padding:10px;
-    border: 1px solid #4f8c73;
+    margin-left: 4%;
+    padding:5px;
+    border: 2px solid #4f8c73;
   }
   
   select:focus {
@@ -74,13 +74,13 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   
-  label[for="birthdate"] {
+  /* label[for="birthdate"] {
     margin-top: 5px;
   }
   
   label[for="timeperiod"] {
     margin-top: 5px;
-  }
+  } */
   input[type="text"] {
     width: 40%;
     height: 40px;
@@ -95,5 +95,35 @@ form {
   /* You can add more styles as needed */
 .payinfo{
   font-size: 40px;
-  margin-left: 25%;
+  margin-left: 32%;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+.selector{
+  margin-left: 20%;
+}
+.paybutton {
+  cursor: pointer;
+    width: 200px;
+    height: 56px;
+    /* padding: 0 20px; */
+    background:#56967A;
+    color: #f7f7f7;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+    margin-left: 42%;
+    border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
 }

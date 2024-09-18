@@ -53,11 +53,12 @@ const Td = styled.td`
 const ProductTable: React.FC<TableProps> = () => {
   return (
     <TableContainer>
-        <p className='p'>أسعار الأيام و الأوقات </p>
+              <p className='p'>Days and Timing Prices</p>
+        {/* <p className='p'>أسعار الأيام و الأوقات </p> */}
       <Table>
         <Thead>
           <Tr>
-            <Td contentEditable={true}>Day</Td>
+            <Td contentEditable={true}>الأيام</Td>
             <Td contentEditable={true}>(10am-8pm) نهاري </Td>
             <Td contentEditable={true}>(10am-12am) نهاري مع سهرة</Td>
             <Td contentEditable={true}>(10pm-8am) ليلي </Td>

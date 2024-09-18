@@ -1,3 +1,4 @@
+
 .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -36,3 +37,6 @@
  .spec{
     margin-left: 10%;
  }
+ /* .welcome{
+    color:#419470;
+ } */
