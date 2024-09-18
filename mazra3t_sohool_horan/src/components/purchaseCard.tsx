@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import '../style/purchaseCard.css'
 interface Props {
   // Add any props you need to pass to the component
 }
