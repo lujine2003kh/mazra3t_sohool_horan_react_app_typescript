@@ -75,7 +75,7 @@ const [birthdate, setBirthdate] = useState<Birthdate>({ day: 0, month: '', year:
           type="text"
           value={FirstName}
           onChange={(event) => setFirstName(event.target.value)}
-          placeholder="Lujine"
+          placeholder="First Name"
         />
         {errors.FirstName && <div style={{ color: 'red' }}>{errors.FirstName}</div>}
       </label>
@@ -85,7 +85,7 @@ const [birthdate, setBirthdate] = useState<Birthdate>({ day: 0, month: '', year:
           type="text"
           value={LastName}
           onChange={(event) => setLastName(event.target.value)}
-          placeholder="khasawneh"
+          placeholder="Last Name"
         />
         {errors.LastName && <div style={{ color: 'red' }}>{errors.LastName}</div>}
       </label>
@@ -95,7 +95,7 @@ const [birthdate, setBirthdate] = useState<Birthdate>({ day: 0, month: '', year:
           type="text"
           value={EmailAddress}
           onChange={(event) => setEmailAddress(event.target.value)}
-          placeholder="klujine2003@gmail.com"
+          placeholder="sdkProject@gmail.com"
         />
         {errors.EmailAddress && <div style={{ color: 'red' }}>{errors.EmailAddress}</div>}
       </label>
@@ -105,7 +105,7 @@ const [birthdate, setBirthdate] = useState<Birthdate>({ day: 0, month: '', year:
           type="text"
           value={PhoneNumber}
           onChange={(event) => setPhoneNumber(event.target.value)}
-          placeholder="0796118158"
+          placeholder="phone Number"
         />
         {errors.PhoneNumber && <div style={{ color: 'red' }}>{errors.PhoneNumber}</div>}
       </label>

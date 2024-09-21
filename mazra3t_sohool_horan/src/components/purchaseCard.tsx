@@ -20,9 +20,9 @@ const Cardpurchase: React.FC<Props> = ({
     
   return (
     <div className="cardpurchase">
-      <button type="button" className="dismiss" onClick={onDismiss}>
+      <Link to='/Home'><button type="button" className="dismiss" onClick={onDismiss}>
         ×
-      </button>
+      </button></Link>
       <div className="header">
         <div className="imagepurchase">
           <svg
@@ -44,15 +44,15 @@ const Cardpurchase: React.FC<Props> = ({
           </svg>
         </div>
         <div className="contentpurchase">
-          <span className="titlepurchase">{title}</span>
-          <p className="messagepurchase">{message}</p>
+          <span className="titlepurchase">Booked Successfully</span>
+          <p className="messagepurchase">Thank you for your purchase. Your reservation is done ,we hope you have a great time at mazra3t_sohool_horan </p>
         </div>
         <div className="actionspurchase">
           <button type="button" className="historypurchase" onClick={onHistory}>
-            History
+            Last Reservations
           </button>
           <button type="button" className="trackpurchase" onClick={onTrack}>
-            Track my package
+            Check Booked Reservation
           </button>
         </div>
       </div>
