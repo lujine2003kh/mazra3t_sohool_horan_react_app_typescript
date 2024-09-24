@@ -32,9 +32,8 @@ export default function TitlebarBelowMasonryImageList() {
     <Box sx={{ width: 900, height: 600, overflowY: 'scroll' }} className='gall' >
       <ImageList className='gallery' variant="masonry" cols={3} gap={8}>
         {itemData.map((item) => (
-          <ImageListItem key={item.img}>
+          <ImageListItem className="hoverImage" key={item.img}>
             <img
-            className="hovarImage"
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
               src={`${item.img}?w=248&fit=crop&auto=format`}
               alt={item.title}

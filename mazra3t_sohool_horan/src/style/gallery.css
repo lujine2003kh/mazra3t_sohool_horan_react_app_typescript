@@ -50,8 +50,11 @@
 .grid{
     margin-bottom: 0;
 }
-.hovarImage{
-    width: 100%;
+.hoverImage:hover{
+    width:90%;
+    transform: scale(1.4, 1.4);
+    z-index: 1;
+    border-color: #419470;
 }
 /* MuiImageListItem-img:hover{
     width: 500px;
@@ -87,7 +90,11 @@
 
   }
   @media (max-width:1536px) {
-    
+    .css-1egbo6g {
+        width: 80%;
+        height: 400px;
+        overflow-y: scroll;
+    }
     /* styles here will be applied when the screen width is 575px or less */
   }
   @media (max-width:1280px) {
@@ -96,3 +103,4 @@
     
 
   }
+  

@@ -97,5 +97,22 @@
         border-color:#56967A ;
         border-style:inset;
       }
+      .spec {
+        margin-left: 10%;
+        width: 80%;
+    }
+    .css-19r6kue-MuiContainer-root {
+      width: 100%;
+      margin-left: auto;
+      box-sizing: border-box;
+      margin-right: auto;
+      display: flex;
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+  .welcome{
+    margin-left: 30%;
+    font-size: 40px;
+}
 
   }
