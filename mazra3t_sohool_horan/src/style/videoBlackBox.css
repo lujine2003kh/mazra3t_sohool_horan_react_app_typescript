@@ -45,6 +45,26 @@
         border-color:#56967A ;
         border-style:inset;
       }
+      .welcome{
+        margin-left: 25%;
+        font-size: 20px;
+      }
+      .spec {
+        margin-left: 10%;
+        width: 320px;
+      }
+      .hGBEGJ {
+        background-color: #56967A;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        bottom: 0;
+        height: 95px;
+        
+    }
+    
 
   }
   @media (max-width:1536px) {
@@ -59,6 +79,11 @@
         border-color:#56967A ;
         border-style:inset;
       }
+      .welcome{
+        margin-left: 38%;
+        font-size: 40px;
+    }
+    
 
   }
   @media (max-width:1280px) {

@@ -16,7 +16,7 @@ const Login: React.FC<LoginProps> = () => {
           Welcome Back to <span>mazra3at sohool horan</span>
         </h2>
         <form className="form" id="form">
-          <input type="email" id="emailID" placeholder="Email" />
+          <input  type="email" id="emailID" placeholder="Email" />
           <input type="password" id="passwordID" placeholder="Password" />
           <Link to='/Home'><button className='loginbtn' type="submit">Sign In</button></Link>
         </form>

@@ -12,18 +12,7 @@
 .div2 {
     grid-row: span 2 / span 2;
 }
-@media ( max-width: 640px){
-    .welcome{
-        margin-left: 25%;
-        width:500px;
-    }
-}
-@media (max-width: 1536px){
-    .welcome{
-        margin-left: 38%;
-        font-size: 40px;
-    }
-}
+
 @media (max-width: 1280px){
     .welcome{
         margin-left: 40%;

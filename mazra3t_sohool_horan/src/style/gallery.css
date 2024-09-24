@@ -56,3 +56,43 @@
 /* MuiImageListItem-img:hover{
     width: 500px;
 } */
+@media (max-width:640px) {
+    /* styles here will be applied when the screen width is 575px or less */
+    .css-1egbo6g {
+        width: 200px;
+        height: 200px;
+        overflow-y: scroll;
+    }
+    .check {
+        margin-left: 10%;
+        font-size: 20px;
+        /* color: #419470; */
+    }
+    .gall {
+        margin-left: 10%;
+        margin-bottom: 5%;
+        border-width: 10px;
+        border-style: outset;
+        border-color: #419470;
+    }
+    .look {
+        font-size: 20px;
+        /* color: #419470; */
+    }
+    .vidSwim {
+        width: 200px;
+        margin-left: 40%;
+        height: 250px;
+    }
+
+  }
+  @media (max-width:1536px) {
+    
+    /* styles here will be applied when the screen width is 575px or less */
+  }
+  @media (max-width:1280px) {
+    
+    /* styles here will be applied when the screen width is 575px or less */
+    
+
+  }

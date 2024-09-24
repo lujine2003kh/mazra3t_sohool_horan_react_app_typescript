@@ -139,3 +139,88 @@
     text-transform: capitalize;
     color: #56967A;
   }
+  @media (max-width:640px) {
+    .login-form {
+      width: 90%;
+      margin: 0;
+      display: list-item;
+      font-size: 20px;
+      color: #419470;
+      font-family: "Euclid Circular A", "Poppins";
+  }
+  .control {
+    border: 1.5px solid #56967A;
+    outline: none;
+    width: 50%;
+    height: 56px;
+    padding: 0 16px;
+    background: #f6f7ff;
+    color: inherit;
+    border-radius: 6px;
+    margin: 8px 0;
+    font-family: inherit;
+    text-align: left;
+    font-size: 18px;
+    transition: 0.4s;
+    margin-left: 5%;
+  }
+  .bars {
+    margin: 8px 0;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 6px;
+    border-radius: 3px;
+    background: #075835;
+    width: 50%;
+    margin-left: 30%;
+  }
+  button.control {
+    cursor: pointer;
+    width: 100px;
+    height: 56px;
+    padding: 0 20px;
+    background: #56967A;
+    color: #f7f7f7;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+    margin-left: 0%;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+  }
+  .hGBEGJ {
+    background-color: #56967A;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    height: 95px;
+    width: 90%;
+}
+  .username{
+    width: 100%;
+    margin-left: 0%;
+  }
+  
+  }
+  @media (max-width:1536px) {
+    
+    /* styles here will be applied when the screen width is 575px or less */
+  }
+  @media (max-width:1280px) {
+    
+    /* styles here will be applied when the screen width is 575px or less */
+    
+  
+  }
