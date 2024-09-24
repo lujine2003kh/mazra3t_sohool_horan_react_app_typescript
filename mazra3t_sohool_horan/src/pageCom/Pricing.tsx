@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components';
 import '../style/prices.css';
 import money from '../media/undraw_wallet_re_cx9u.svg';
+import { Link } from 'react-router-dom';
+
 interface TableProps {
   className?: string;
 }
@@ -63,6 +65,7 @@ const ProductTable: React.FC<TableProps> = () => {
             <Td contentEditable={true}>(10am-12am) نهاري مع سهرة</Td>
             <Td contentEditable={true}>(10pm-8am) ليلي </Td>
             <Td contentEditable={true}>يوم كامل</Td>
+            <Td contentEditable={true}>الحجز</Td>
           </Tr>
         </Thead>
         <Tbody>
@@ -72,6 +75,7 @@ const ProductTable: React.FC<TableProps> = () => {
             <Td contentEditable={true}>170 jd</Td>
             <Td contentEditable={true}>110 jd</Td>
             <Td contentEditable={true}>200 jd</Td>
+            <Td contentEditable={true}><Link to='/Booking'><button className='regi' type="submit">Book</button></Link></Td>
           </Tr>
           <Tr>
             <Td contentEditable={true}>الاثنين</Td>
@@ -79,6 +83,8 @@ const ProductTable: React.FC<TableProps> = () => {
             <Td contentEditable={true}>170 jd</Td>
             <Td contentEditable={true}>110 jd</Td>
             <Td contentEditable={true}>200 jd</Td>
+            <Td contentEditable={true}><Link to='/Booking'><button className='regi' type="submit">Book</button></Link></Td>
+
           </Tr>
           <Tr>
             <Td contentEditable={true}>الثلاثاء</Td>
@@ -86,6 +92,8 @@ const ProductTable: React.FC<TableProps> = () => {
             <Td contentEditable={true}>170 jd</Td>
             <Td contentEditable={true}>110 jd</Td>
             <Td contentEditable={true}>200 jd</Td>
+            <Td contentEditable={true}><Link to='/Booking'><button className='regi' type="submit">Book</button></Link></Td>
+
           </Tr>
           <Tr>
             <Td contentEditable={true}>الأربعاء</Td>
@@ -93,6 +101,8 @@ const ProductTable: React.FC<TableProps> = () => {
             <Td contentEditable={true}>170 jd</Td>
             <Td contentEditable={true}>110 jd</Td>
             <Td contentEditable={true}>200 jd</Td>
+            <Td contentEditable={true}><Link to='/Booking'><button className='regi' type="submit">Book</button></Link></Td>
+
           </Tr>
           <Tr>
             <Td contentEditable={true}>الخميس</Td>
@@ -100,6 +110,8 @@ const ProductTable: React.FC<TableProps> = () => {
             <Td contentEditable={true}>170 JD</Td>
             <Td contentEditable={true}>110 JD</Td>
             <Td contentEditable={true}>200 JD</Td>
+            <Td contentEditable={true}><Link to='/Booking'><button className='regi' type="submit">Book</button></Link></Td>
+
           </Tr>
           <Tr>
             <Td contentEditable={true}>الجمعة</Td>
@@ -107,6 +119,8 @@ const ProductTable: React.FC<TableProps> = () => {
             <Td contentEditable={true}>200 JD</Td>
             <Td contentEditable={true}>130 JD</Td>
             <Td contentEditable={true}>240 JD</Td>
+            <Td contentEditable={true}><Link to='/Booking'><button className='regi' type="submit">Book</button></Link></Td>
+
           </Tr>
           <Tr>
             <Td contentEditable={true}>السبت</Td>
@@ -114,6 +128,8 @@ const ProductTable: React.FC<TableProps> = () => {
             <Td contentEditable={true}>200 JD</Td>
             <Td contentEditable={true}>130 JD</Td>
             <Td contentEditable={true}>240 JD</Td>
+            <Td contentEditable={true}><Link to='/Booking'><button className='regi' type="submit">Book</button></Link></Td>
+
           </Tr>
           {/* rest of the table rows */}
         </Tbody>

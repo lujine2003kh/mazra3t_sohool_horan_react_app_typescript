@@ -104,3 +104,21 @@
     
 
   }
+  .regi {
+    background: #ffff;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color:#419470;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .regi:hover {
+    background: #419470;
+    color: #ffff;
+    text-decoration: none;
+  }
+  
